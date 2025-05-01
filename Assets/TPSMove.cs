@@ -19,7 +19,7 @@ public class TPSMove : MonoBehaviour
         var horizontal = transform.forward *Input.GetAxis("Vertical");
         var vertical = transform.right * Input.GetAxis("Horizontal");
 
-        rb.AddForce(vertical + horizontal);
-
+        rb.AddForce((vertical + horizontal)*3);
+        
     }
 }
